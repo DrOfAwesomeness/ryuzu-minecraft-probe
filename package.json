@@ -1,0 +1,27 @@
+{
+  "name": "ryuzu-minecraft-probe",
+  "version": "0.1.0",
+  "description": "Minecraft server log probe and robust command system for RyuZU-Bot2",
+  "main": "src/app.js",
+  "repository": "https://github.com/DrOfAwesomeness/ryuzu-minecraft-probe",
+  "author": "Matthew East <7518868+DrOfAwesomeness@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@logdna/tail-file": "^3.0.1",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "pino": "^8.11.0",
+    "rcon-client": "^4.2.3",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1",
+    "@types/node": "^18.16.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node src/app.js"
+  }
+}
